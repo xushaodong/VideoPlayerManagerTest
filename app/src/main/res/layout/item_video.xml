@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--标题-->
+        <TextView
+            android:id="@+id/item_video_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"/>
+
+        <!--播放器-->
+        <com.volokh.danylo.video_player_manager.ui.VideoPlayerView
+            android:id="@+id/item_video_vpv_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/item_video_tv_title"/>
+
+        <!--背景-->
+        <ImageView
+            android:id="@+id/item_video_iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/item_video_tv_title"
+            android:scaleType="centerCrop"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
